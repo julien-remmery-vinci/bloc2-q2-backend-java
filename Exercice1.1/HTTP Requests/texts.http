@@ -24,3 +24,14 @@ Content-Type: application/json
   "level": "test"
 }
 
+### Delete one text
+DELETE {{baseUrl}}/1
+
+### Update one text
+PUT {{baseUrl}}/1
+Content-Type: application/json
+
+{
+  "content": "Hello again world!",
+  "level": "easy"
+}

@@ -1,7 +1,7 @@
 @baseUrl = http://localhost:8080/films
 
 ### Read All films
-GET {{baseUrl}}/films
+GET {{baseUrl}}
 
 ###
 GET {{baseUrl}}/4
@@ -13,7 +13,7 @@ GET {{baseUrl}}/10
 GET {{baseUrl}}?minimum-duration=160
 
 ### Create One film
-POST {{baseUrl}}/films
+POST {{baseUrl}}
 Content-Type: application/json
 
 {
@@ -23,14 +23,14 @@ Content-Type: application/json
   "link" : "https://en.wikipedia.org/wiki/Venom:_Let_There_Be_Carnage"
 }
 ### Update One film
-PUT {{baseUrl}}/films/4
+PUT {{baseUrl}}/1
 Content-Type: application/json
 
 {
   "title" : "Venom: Let There Be Carnage",
-  "duration" : 97,
+  "duration" : 1,
   "budget" : 110,
   "link" : "https://en.wikipedia.org/wiki/Venom:_Let_There_Be_Carnage"
 }
 ### Delete one film
-DELETE {{baseUrl}}/films/5
+DELETE {{baseUrl}}/5

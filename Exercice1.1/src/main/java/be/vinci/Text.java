@@ -1,5 +1,7 @@
 package be.vinci;
 
+import java.util.Objects;
+
 public class Text {
     private int id;
     private String content;
@@ -34,5 +36,18 @@ public class Text {
 
     public void setLevel(String level) {
         this.level = level;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Text text = (Text) o;
+        return id == text.id;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id);
     }
 }
