@@ -1,0 +1,26 @@
+@baseUrl = http://localhost:8080/texts
+
+### Read all texts
+GET {{baseUrl}}
+
+### Read one text
+GET {{baseUrl}}/1
+
+### Create one text
+POST {{baseUrl}}
+Content-Type: application/json
+
+{
+  "content": "Hello world!",
+  "level": "easy"
+}
+
+### Create one text with wrong level
+POST {{baseUrl}}
+Content-Type: application/json
+
+{
+  "content": "Hello world!",
+  "level": "test"
+}
+
