@@ -1,0 +1,1 @@
+Cannot invoke "be.vinci.domain.DomainFactory.getUser()" because "be.vinci.services.UserDataServiceImpl.domainFactory" is null

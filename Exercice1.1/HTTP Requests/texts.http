@@ -28,10 +28,10 @@ Content-Type: application/json
 DELETE {{baseUrl}}/1
 
 ### Update one text
-PUT {{baseUrl}}/1
+PUT {{baseUrl}}/4
 Content-Type: application/json
 
 {
-  "content": "Hello again world!",
-  "level": "easy"
+  "content": "Bonjour",
+  "level": "hard"
 }

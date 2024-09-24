@@ -1,0 +1,720 @@
+GET http://localhost:8080/news/page/1
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJhdXRoMCIsInVzZXIiOjF9.IOjBdMCrrnIuaEpVpFTcu1cK7YMvHVR4GZUbJ70lN0U
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-02-16T111441.200.json
+
+###
+
+GET http://localhost:8080/news/page/1
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-02-16T111429.200.json
+
+###
+
+GET http://localhost:8080/news/page/1
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-02-16T111239.404.txt
+
+###
+
+POST http://localhost:8080/news/2/associate
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJhdXRoMCIsInVzZXIiOjF9.IOjBdMCrrnIuaEpVpFTcu1cK7YMvHVR4GZUbJ70lN0U
+Content-Length: 17
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "pageId": 1
+}
+
+<> 2024-02-16T111234.200.json
+
+###
+
+GET http://localhost:8080/news
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-02-16T111224.200.json
+
+###
+
+GET http://localhost:8080/news/page/1
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-02-16T111216.404.txt
+
+###
+
+GET http://localhost:8080/news
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-02-16T110221.200.json
+
+###
+
+POST http://localhost:8080/news
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJhdXRoMCIsInVzZXIiOjF9.IOjBdMCrrnIuaEpVpFTcu1cK7YMvHVR4GZUbJ70lN0U
+Content-Length: 177
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "title": "Présentation",
+  "description": "Présentation de julien",
+  "author": "julien",
+  "content": "Bonjour à tous voici ma published news",
+  "status": "published"
+}
+
+<> 2024-02-16T110216.200.json
+
+###
+
+POST http://localhost:8080/news
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJhdXRoMCIsInVzZXIiOjF9.IOjBdMCrrnIuaEpVpFTcu1cK7YMvHVR4GZUbJ70lN0U
+Content-Length: 177
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "title": "Présentation",
+  "description": "Présentation de julien",
+  "author": "Julien",
+  "content": "Bonjour à tous voici ma published news",
+  "status": "published"
+}
+
+<> 2024-02-16T110209.400.json
+
+###
+
+GET http://localhost:8080/news
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJhdXRoMCIsInVzZXIiOjF9.IOjBdMCrrnIuaEpVpFTcu1cK7YMvHVR4GZUbJ70lN0U
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-02-16T110158.200.json
+
+###
+
+GET http://localhost:8080/news
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-02-16T110151.200.json
+
+###
+
+POST http://localhost:8080/auths/login
+Content-Type: application/json
+Content-Length: 47
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "login":"julien",
+  "password":"password"
+}
+
+<> 2024-02-16T110148.200.json
+
+###
+
+GET http://localhost:8080/news
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-02-12T154752.200.json
+
+###
+
+GET http://localhost:8080/news
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-02-12T154749.200.json
+
+###
+
+POST http://localhost:8080/news/1/associate
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJhdXRoMCIsInVzZXIiOjF9.IOjBdMCrrnIuaEpVpFTcu1cK7YMvHVR4GZUbJ70lN0U
+Content-Length: 17
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "pageId": 1
+}
+
+<> 2024-02-12T154449.200.json
+
+###
+
+POST http://localhost:8080/news
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJhdXRoMCIsInVzZXIiOjF9.IOjBdMCrrnIuaEpVpFTcu1cK7YMvHVR4GZUbJ70lN0U
+Content-Length: 171
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "title": "Présentation",
+  "description": "Présentation de julien",
+  "author": "julien",
+  "content": "Bonjour à tous voici ma hidden news",
+  "status": "hidden"
+}
+
+<> 2024-02-12T152225.200.json
+
+###
+
+POST http://localhost:8080/news
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJhdXRoMCIsInVzZXIiOjF9.IOjBdMCrrnIuaEpVpFTcu1cK7YMvHVR4GZUbJ70lN0U
+Content-Length: 171
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "title": "Présentation",
+  "description": "Présentation de julien",
+  "author": "julien",
+  "content": "Bonjour à tous voici ma hidden news",
+  "status": "hidden"
+}
+
+<> 2024-02-12T151741.500.json
+
+###
+
+POST http://localhost:8080/news
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJhdXRoMCIsInVzZXIiOjF9.IOjBdMCrrnIuaEpVpFTcu1cK7YMvHVR4GZUbJ70lN0U
+Content-Length: 171
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "title": "Présentation",
+  "description": "Présentation de julien",
+  "author": "Julien",
+  "content": "Bonjour à tous voici ma hidden news",
+  "status": "hidden"
+}
+
+<> 2024-02-12T151729.400.json
+
+###
+
+POST http://localhost:8080/news
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJhdXRoMCIsInVzZXIiOjF9.IOjBdMCrrnIuaEpVpFTcu1cK7YMvHVR4GZUbJ70lN0U
+Content-Length: 171
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "title": "Présentation",
+  "description": "Présentation de julien",
+  "author": "Julien",
+  "content": "Bonjour à tous voici ma hidden news",
+  "status": "hidden"
+}
+
+<> 2024-02-12T151625.400.txt
+
+###
+
+POST http://localhost:8080/news
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJhdXRoMCIsInVzZXIiOjF9.IOjBdMCrrnIuaEpVpFTcu1cK7YMvHVR4GZUbJ70lN0U
+Content-Length: 171
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "title": "Présentation",
+  "description": "Présentation de julien",
+  "author": "Julien",
+  "content": "Bonjour à tous voici ma hidden news",
+  "status": "hidden"
+}
+
+<> 2024-02-12T145943.500.html
+
+###
+
+DELETE http://localhost:8080/news/0
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-02-12T144725-4.500.html
+
+###
+
+DELETE http://localhost:8080/news/1
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJhdXRoMCIsInVzZXIiOjF9.IOjBdMCrrnIuaEpVpFTcu1cK7YMvHVR4GZUbJ70lN0U
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-02-12T144725-3.500.html
+
+###
+
+PUT http://localhost:8080/news/1
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJhdXRoMCIsInVzZXIiOjF9.IOjBdMCrrnIuaEpVpFTcu1cK7YMvHVR4GZUbJ70lN0U
+Content-Length: 177
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "title": "Présentation",
+  "description": "Présentation de julien",
+  "author": "Julien",
+  "content": "Bonjour à tous voici ma published news",
+  "status": "published"
+}
+
+<> 2024-02-12T144725-2.500.html
+
+###
+
+POST http://localhost:8080/news
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJhdXRoMCIsInVzZXIiOjF9.IOjBdMCrrnIuaEpVpFTcu1cK7YMvHVR4GZUbJ70lN0U
+Content-Length: 177
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "title": "Présentation",
+  "description": "Présentation de julien",
+  "author": "Julien",
+  "content": "Bonjour à tous voici ma published news",
+  "status": "published"
+}
+
+<> 2024-02-12T144725-1.500.html
+
+###
+
+POST http://localhost:8080/news
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJhdXRoMCIsInVzZXIiOjF9.IOjBdMCrrnIuaEpVpFTcu1cK7YMvHVR4GZUbJ70lN0U
+Content-Length: 171
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "title": "Présentation",
+  "description": "Présentation de julien",
+  "author": "Julien",
+  "content": "Bonjour à tous voici ma hidden news",
+  "status": "hidden"
+}
+
+<> 2024-02-12T144725.500.html
+
+###
+
+GET http://localhost:8080/news/0
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJhdXRoMCIsInVzZXIiOjF9.IOjBdMCrrnIuaEpVpFTcu1cK7YMvHVR4GZUbJ70lN0U
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-02-12T144725-2.405.txt
+
+###
+
+GET http://localhost:8080/news/1
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJhdXRoMCIsInVzZXIiOjF9.IOjBdMCrrnIuaEpVpFTcu1cK7YMvHVR4GZUbJ70lN0U
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-02-12T144725-1.405.txt
+
+###
+
+GET http://localhost:8080/news
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJhdXRoMCIsInVzZXIiOjF9.IOjBdMCrrnIuaEpVpFTcu1cK7YMvHVR4GZUbJ70lN0U
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-02-12T144725.405.txt
+
+###
+
+GET http://localhost:8080/news
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-02-12T144724.405.txt
+
+###
+
+POST http://localhost:8080/auths/login
+Content-Type: application/json
+Content-Length: 47
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "login":"julien",
+  "password":"password"
+}
+
+<> 2024-02-12T144724.200.json
+
+###
+
+POST http://localhost:8080/auths/register
+Content-Type: application/json
+Content-Length: 47
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "login":"julien",
+  "password":"password"
+}
+
+<> 2024-02-12T144724.409.json
+
+###
+
+POST http://localhost:8080/news
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJhdXRoMCIsInVzZXIiOjF9.IOjBdMCrrnIuaEpVpFTcu1cK7YMvHVR4GZUbJ70lN0U
+Content-Length: 171
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "title": "Présentation",
+  "description": "Présentation de julien",
+  "author": "Julien",
+  "content": "Bonjour à tous voici ma hidden news",
+  "status": "hidden"
+}
+
+<> 2024-02-12T144712.500.html
+
+###
+
+POST http://localhost:8080/news
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJhdXRoMCIsInVzZXIiOjF9.IOjBdMCrrnIuaEpVpFTcu1cK7YMvHVR4GZUbJ70lN0U
+Content-Length: 171
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "title": "Présentation",
+  "description": "Présentation de julien",
+  "author": "Julien",
+  "content": "Bonjour à tous voici ma hidden news",
+  "status": "hidden"
+}
+
+<> 2024-02-12T144543.500.html
+
+###
+
+POST http://localhost:8080/news
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJhdXRoMCIsInVzZXIiOjF9.IOjBdMCrrnIuaEpVpFTcu1cK7YMvHVR4GZUbJ70lN0U
+Content-Length: 171
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "title": "Présentation",
+  "description": "Présentation de julien",
+  "author": "Julien",
+  "content": "Bonjour à tous voici ma hidden news",
+  "status": "hidden"
+}
+
+<> 2024-02-12T144152.500.html
+
+###
+
+GET http://localhost:8080/news
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-02-12T144140.405.txt
+
+###
+
+POST http://localhost:8080/auths/login
+Content-Type: application/json
+Content-Length: 47
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "login":"julien",
+  "password":"password"
+}
+
+<> 2024-02-12T144138.200.json
+
+###
+
+POST http://localhost:8080/auths/login
+Content-Type: application/json
+Content-Length: 47
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "login":"julien",
+  "password":"password"
+}
+
+<> 2024-02-12T144135.200.json
+
+###
+
+POST http://localhost:8080/auths/register
+Content-Type: application/json
+Content-Length: 45
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "login":"test",
+  "password":"password"
+}
+
+<> 2024-02-12T140032.200.json
+
+###
+
+POST http://localhost:8080/auths/register
+Content-Type: application/json
+Content-Length: 45
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "login":"test",
+  "password":"password"
+}
+
+<> 2024-02-12T134749.500.json
+
+###
+
+POST http://localhost:8080/auths/login
+Content-Type: application/json
+Content-Length: 47
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "login":"julien",
+  "password":"password"
+}
+
+<> 2024-02-12T134744.200.json
+
+###
+
+POST http://localhost:8080/auths/register
+Content-Type: application/json
+Content-Length: 45
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "login":"test",
+  "password":"password"
+}
+
+<> 2024-02-12T133844.500.json
+
+###
+
+GET http://localhost:8080/pages
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-02-12T133638.200.json
+
+###
+
+POST http://localhost:8080/pages
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJhdXRoMCIsInVzZXIiOjF9.IOjBdMCrrnIuaEpVpFTcu1cK7YMvHVR4GZUbJ70lN0U
+Content-Length: 135
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "title": "Présentation",
+  "uri": "/presentation",
+  "content": "Bonjour à tous",
+  "author": "julien",
+  "status": "published"
+}
+
+<> 2024-02-12T133634.200.json
+
+###
+
+GET http://localhost:8080/pages
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJhdXRoMCIsInVzZXIiOjF9.IOjBdMCrrnIuaEpVpFTcu1cK7YMvHVR4GZUbJ70lN0U
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-02-12T133619.200.json
+
+###
+
+GET http://localhost:8080/pages
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-02-12T133618.200.json
+
+###
+
+POST http://localhost:8080/pages
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJhdXRoMCIsInVzZXIiOjF9.IOjBdMCrrnIuaEpVpFTcu1cK7YMvHVR4GZUbJ70lN0U
+Content-Length: 132
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "title": "Présentation",
+  "uri": "/presentation",
+  "content": "Bonjour à tous",
+  "author": "julien",
+  "status": "hidden"
+}
+
+<> 2024-02-12T133614.200.json
+
+###
+
+GET http://localhost:8080/pages
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-02-12T133609.200.json
+
+###
+
+POST http://localhost:8080/auths/login
+Content-Type: application/json
+Content-Length: 47
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "login":"julien",
+  "password":"password"
+}
+
+<> 2024-02-12T133556.200.json
+
+###
+
+POST http://localhost:8080/auths/register
+Content-Type: application/json
+Content-Length: 47
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "login":"julien",
+  "password":"password"
+}
+
+<> 2024-02-12T133541.200.json
+
+###
+
+POST http://localhost:8080/auths/register
+Content-Type: application/json
+Content-Length: 47
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "login":"julien",
+  "password":"password"
+}
+
+<> 2024-02-12T133422.500.json
+
+###
+

@@ -1,0 +1,38 @@
+@baseUrl = http://localhost:8080
+
+### Register twig
+POST {{baseUrl}}/auths/register
+Content-Type: application/json
+
+{
+  "login":"twig",
+  "password":"twig",
+  "age": 25,
+  "married": true
+}
+
+### Login twig
+POST {{baseUrl}}/auths/login
+Content-Type: application/json
+
+{
+  "login":"twig",
+  "password":"twig"
+}
+
+> {%
+    client.global.set("twigToken", response.body.token);
+%}
+
+### Login with wrong credentials
+POST {{baseUrl}}/auths/login
+Content-Type: application/json
+
+{
+  "login":"john",
+  "password":"wrong"
+}
+
+### Read All users
+GET {{baseUrl}}/users
+Authorization: {{twigToken}}

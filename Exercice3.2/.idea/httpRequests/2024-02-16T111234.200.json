@@ -1,0 +1,12 @@
+{
+  "id": 2,
+  "title": "Pr&eacute;sentation",
+  "description": "Pr&eacute;sentation de julien",
+  "content": "Bonjour &agrave; tous voici ma published news",
+  "author": "julien",
+  "status": "published",
+  "createdDateTime": "16-02-2024 10:02:16",
+  "expireDateTime": "16-02-2024 10:02:16",
+  "associatedPage": 1,
+  "position": 0
+}

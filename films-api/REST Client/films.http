@@ -1,18 +1,43 @@
 @baseUrl = http://localhost:8080/films
 
+### Login the default user
+POST http://localhost:8080/auths/login
+Content-Type: application/json
+
+{
+  "login":"james",
+  "password":"password"
+}
+
+> {%
+    client.global.set("jamesToken", response.body.token);
+%}
+
 ### Read All films
 GET {{baseUrl}}
 
-###
-GET {{baseUrl}}/4
+### Read film identified by 1
+GET {{baseUrl}}/1
+
+###Read film identified by 0
+GET {{baseUrl}}/0
 
 ###
-GET {{baseUrl}}/10
-
-###
-GET {{baseUrl}}?minimum-duration=160
+GET {{baseUrl}}?minimum-duration=50
 
 ### Create One film
+POST {{baseUrl}}
+Content-Type: application/json
+Authorization: {{jamesToken}}
+
+{
+  "title" : "Venom: Let There Be Carnage",
+  "duration" : 97,
+  "budget" : 110,
+  "link" : "https://en.wikipedia.org/wiki/Venom:_Let_There_Be_Carnage"
+}
+
+### Create One film without authorization
 POST {{baseUrl}}
 Content-Type: application/json
 
@@ -22,15 +47,41 @@ Content-Type: application/json
   "budget" : 110,
   "link" : "https://en.wikipedia.org/wiki/Venom:_Let_There_Be_Carnage"
 }
+
 ### Update One film
-PUT {{baseUrl}}/1
+PUT {{baseUrl}}/3
+Content-Type: application/json
+Authorization: {{jamesToken}}
+
+{
+  "title" : "Venom: Let There Be Carnage",
+  "duration" : 150,
+  "budget" : 110,
+  "link" : "https://en.wikipedia.org/wiki/Venom:_Let_There_Be_Carnage"
+}
+
+### Update One film without authorization
+PUT {{baseUrl}}/3
 Content-Type: application/json
 
 {
   "title" : "Venom: Let There Be Carnage",
-  "duration" : 1,
+  "duration" : 150,
   "budget" : 110,
   "link" : "https://en.wikipedia.org/wiki/Venom:_Let_There_Be_Carnage"
 }
+
 ### Delete one film
-DELETE {{baseUrl}}/5
+DELETE {{baseUrl}}/2
+Authorization: {{jamesToken}}
+
+### Delete one film with wrong id
+DELETE {{baseUrl}}/0
+Authorization: {{jamesToken}}
+
+### Delete one film without autorization
+DELETE {{baseUrl}}/1
+
+### Delete one film with modified token
+DELETE {{baseUrl}}/0
+Authorization: {{jamesToken}}modified

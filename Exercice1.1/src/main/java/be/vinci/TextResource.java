@@ -14,8 +14,7 @@ public class TextResource {
     public List<Text> readAll(@DefaultValue("") @QueryParam("level") String level){
         var texts = Json.parse();
         if(!level.isBlank()){
-            List<Text> filteredTexts = texts.stream().filter(text -> text.getLevel().equals(level)).toList();
-            return filteredTexts;
+            return texts.stream().filter(text -> text.getLevel().equals(level)).toList();
         }
         return texts;
     }
@@ -27,9 +26,7 @@ public class TextResource {
         Text textFound = texts.stream().filter(text -> text.getId() == id).findAny().orElse(null);
         if(textFound == null){
             throw new WebApplicationException(Response.status(Response.Status.NOT_FOUND)
-                    .entity("Ressource not found")
-                    .type("text/plain")
-                    .build());
+                    .entity("Ressource not found").type("text/plain").build());
         }
         return textFound;
     }
@@ -37,14 +34,10 @@ public class TextResource {
     @Consumes(MediaType.APPLICATION_JSON)
     @Produces(MediaType.APPLICATION_JSON)
     public Text createOne(Text text){
-        if(text == null || (!text.getLevel().equals("easy")
-                && !text.getLevel().equals("medium")
-                && !text.getLevel().equals("hard")))
+        if(text == null || text.getContent() == null || text.getContent().isBlank() || text.getLevel() == null)
             throw new WebApplicationException(
                     Response.status(Response.Status.BAD_REQUEST)
-                            .entity("Lacks of mandatory info or unauthorized text level")
-                            .type("text/plain")
-                            .build());
+                            .entity("Lacks of mandatory info or unauthorized text level").type("text/plain").build());
         var texts = Json.parse();
         text.setId(texts.size() + 1);
         text.setContent(StringEscapeUtils.escapeHtml4(text.getContent()));
@@ -58,6 +51,9 @@ public class TextResource {
     @Consumes(MediaType.APPLICATION_JSON)
     @Produces(MediaType.APPLICATION_JSON)
     public Text deleteOne(@PathParam("id") int id){
+        if (id == 0)
+            throw new WebApplicationException(
+                    Response.status(Response.Status.BAD_REQUEST).entity("Lacks of mandatory info").type("text/plain").build());
         var texts = Json.parse();
         Text textToDelete =texts.stream().filter(text -> text.getId() == id).findAny().orElse(null);
         if(textToDelete == null)
@@ -72,20 +68,10 @@ public class TextResource {
     @Consumes(MediaType.APPLICATION_JSON)
     @Produces(MediaType.APPLICATION_JSON)
     public Text updateOne(Text text, @PathParam("id") int id){
-        if (id == 0 || text == null || text.getContent() == null || text.getContent().isBlank())
+        if (id == 0 || text == null || text.getContent() == null || text.getContent().isBlank() || text.getLevel() == null || text.getLevel().isBlank())
             throw new WebApplicationException(
                     Response.status(Response.Status.BAD_REQUEST)
-                            .entity("Lacks of mandatory info")
-                            .type("text/plain")
-                            .build());
-        if(text.getLevel() == null || (!text.getLevel().equals("easy")
-                && !text.getLevel().equals("medium")
-                && !text.getLevel().equals("hard")))
-            throw new WebApplicationException(
-                    Response.status(Response.Status.BAD_REQUEST)
-                            .entity("Lacks of mandatory info or unauthorized text level")
-                            .type("text/plain")
-                            .build());
+                            .entity("Lacks of mandatory info").type("text/plain").build());
         var texts = Json.parse();
         Text textToUpdate = texts.stream().filter(t -> t.getId() == id).findAny().orElse(null);
         if(textToUpdate == null)

@@ -1,0 +1,2 @@
+Unrecognized field "titre" (class be.vinci.domain.Page), not marked as ignorable (6 known properties: "status", "title", "content", "id", "uri", "author"])
+ at [Source: (org.glassfish.jersey.message.internal.ReaderInterceptorExecutor$UnCloseableInputStream); line: 2, column: 13] (through reference chain: be.vinci.domain.Page["titre"])

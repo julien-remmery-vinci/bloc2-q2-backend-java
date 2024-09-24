@@ -1,0 +1,12 @@
+{
+  "id": 1,
+  "title": "Pr&eacute;sentation",
+  "description": "Pr&eacute;sentation de julien",
+  "content": "Bonjour &agrave; tous voici ma hidden news",
+  "author": "julien",
+  "status": "hidden",
+  "createdDateTime": "12-02-2024 02:22:25",
+  "expireDateTime": "12-02-2024 02:22:25",
+  "associatedPage": 1,
+  "position": 0
+}

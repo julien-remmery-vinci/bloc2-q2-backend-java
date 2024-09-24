@@ -35,7 +35,10 @@ public class Text {
     }
 
     public void setLevel(String level) {
-        this.level = level;
+        if(level != null && !level.equals("easy") && !level.equals("medium") && !level.equals("hard"))
+            this.level = null;
+        else
+            this.level = level;
     }
 
     @Override

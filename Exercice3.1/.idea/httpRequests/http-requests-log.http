@@ -1,0 +1,765 @@
+POST http://localhost:8080/auths/register
+Content-Type: application/json
+Content-Length: 45
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "login":"test",
+  "password":"password"
+}
+
+<> 2024-02-12T140032.200.json
+
+###
+
+POST http://localhost:8080/auths/register
+Content-Type: application/json
+Content-Length: 45
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "login":"test",
+  "password":"password"
+}
+
+<> 2024-02-12T134749.500.json
+
+###
+
+POST http://localhost:8080/auths/login
+Content-Type: application/json
+Content-Length: 47
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "login":"julien",
+  "password":"password"
+}
+
+<> 2024-02-12T134744.200.json
+
+###
+
+POST http://localhost:8080/auths/register
+Content-Type: application/json
+Content-Length: 45
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "login":"test",
+  "password":"password"
+}
+
+<> 2024-02-12T133844.500.json
+
+###
+
+GET http://localhost:8080/pages
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-02-12T133638.200.json
+
+###
+
+POST http://localhost:8080/pages
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJhdXRoMCIsInVzZXIiOjF9.IOjBdMCrrnIuaEpVpFTcu1cK7YMvHVR4GZUbJ70lN0U
+Content-Length: 135
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "title": "Présentation",
+  "uri": "/presentation",
+  "content": "Bonjour à tous",
+  "author": "julien",
+  "status": "published"
+}
+
+<> 2024-02-12T133634.200.json
+
+###
+
+GET http://localhost:8080/pages
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJhdXRoMCIsInVzZXIiOjF9.IOjBdMCrrnIuaEpVpFTcu1cK7YMvHVR4GZUbJ70lN0U
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-02-12T133619.200.json
+
+###
+
+GET http://localhost:8080/pages
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-02-12T133618.200.json
+
+###
+
+POST http://localhost:8080/pages
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJhdXRoMCIsInVzZXIiOjF9.IOjBdMCrrnIuaEpVpFTcu1cK7YMvHVR4GZUbJ70lN0U
+Content-Length: 132
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "title": "Présentation",
+  "uri": "/presentation",
+  "content": "Bonjour à tous",
+  "author": "julien",
+  "status": "hidden"
+}
+
+<> 2024-02-12T133614.200.json
+
+###
+
+GET http://localhost:8080/pages
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-02-12T133609.200.json
+
+###
+
+POST http://localhost:8080/auths/login
+Content-Type: application/json
+Content-Length: 47
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "login":"julien",
+  "password":"password"
+}
+
+<> 2024-02-12T133556.200.json
+
+###
+
+POST http://localhost:8080/auths/register
+Content-Type: application/json
+Content-Length: 47
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "login":"julien",
+  "password":"password"
+}
+
+<> 2024-02-12T133541.200.json
+
+###
+
+POST http://localhost:8080/auths/register
+Content-Type: application/json
+Content-Length: 47
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "login":"julien",
+  "password":"password"
+}
+
+<> 2024-02-12T133422.500.json
+
+###
+
+POST http://localhost:8080/auths/register
+Content-Type: application/json
+Content-Length: 47
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "login":"julien",
+  "password":"password"
+}
+
+<> 2024-02-12T133420.500.json
+
+###
+
+POST http://localhost:8080/auths/login
+Content-Type: application/json
+Content-Length: 47
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "login":"julien",
+  "password":"password"
+}
+
+<> 2024-02-12T133410.401.json
+
+###
+
+POST http://localhost:8080/auths/register
+Content-Type: application/json
+Content-Length: 47
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "login":"julien",
+  "password":"password"
+}
+
+<> 2024-02-12T133405.500.json
+
+###
+
+POST http://localhost:8080/auths/register
+Content-Type: application/json
+Content-Length: 47
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "login":"julien",
+  "password":"password"
+}
+
+<> 2024-02-12T133305.500.json
+
+###
+
+POST http://localhost:8080/auths/login
+Content-Type: application/json
+Content-Length: 47
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "login":"julien",
+  "password":"password"
+}
+
+<> 2024-02-12T132726.401.json
+
+###
+
+POST http://localhost:8080/auths/register
+Content-Type: application/json
+Content-Length: 47
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "login":"julien",
+  "password":"password"
+}
+
+<> 2024-02-12T132601.500.json
+
+###
+
+POST http://localhost:8080/auths/register
+Content-Type: application/json
+Content-Length: 47
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "login":"julien",
+  "password":"password"
+}
+
+<> 2024-02-12T132450.500.json
+
+###
+
+POST http://localhost:8080/auths/login
+Content-Type: application/json
+Content-Length: 47
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "login":"julien",
+  "password":"password"
+}
+
+<> 2024-02-12T132444.401.json
+
+###
+
+GET http://localhost:8080/pages/5
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-02-09T105544.500.html
+
+###
+
+GET http://localhost:8080/pages/4
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJhdXRoMCIsInVzZXIiOjJ9.-n43zNyE1LiwlFWP3vMFa8SOe1uGj8ZhZXHKZmmtmH8
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-02-09T105535.200.json
+
+###
+
+GET http://localhost:8080/pages/5
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJhdXRoMCIsInVzZXIiOjJ9.-n43zNyE1LiwlFWP3vMFa8SOe1uGj8ZhZXHKZmmtmH8
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-02-09T105530.404.txt
+
+###
+
+GET http://localhost:8080/pages
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJhdXRoMCIsInVzZXIiOjJ9.-n43zNyE1LiwlFWP3vMFa8SOe1uGj8ZhZXHKZmmtmH8
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-02-09T105521.200.json
+
+###
+
+POST http://localhost:8080/auths/login
+Content-Type: application/json
+Content-Length: 45
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "login":"test",
+  "password":"password"
+}
+
+<> 2024-02-09T105516.200.json
+
+###
+
+POST http://localhost:8080/auths/register
+Content-Type: application/json
+Content-Length: 45
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "login":"test",
+  "password":"password"
+}
+
+<> 2024-02-09T105511.200.json
+
+###
+
+GET http://localhost:8080/pages
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJhdXRoMCIsInVzZXIiOjF9.dzQ2HcUZ21vyKfFRy_kjWVAPxNbbWld6iXRFqBPsT_w
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-02-09T105422.200.json
+
+###
+
+POST http://localhost:8080/auths/login
+Content-Type: application/json
+Content-Length: 47
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "login":"julien",
+  "password":"password"
+}
+
+<> 2024-02-09T105414.200.json
+
+###
+
+GET http://localhost:8080/pages
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJhdXRoMCIsInVzZXIiOjF9.dzQ2HcUZ21vyKfFRy_kjWVAPxNbbWld6iXRFqBPsT_w
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-02-05T154221.200.json
+
+###
+
+GET http://localhost:8080/pages
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-02-05T154219.200.json
+
+###
+
+GET http://localhost:8080/pages
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJhdXRoMCIsInVzZXIiOjF9.dzQ2HcUZ21vyKfFRy_kjWVAPxNbbWld6iXRFqBPsT_w
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-02-05T154207.200.json
+
+###
+
+GET http://localhost:8080/pages
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-02-05T154205.200.json
+
+###
+
+POST http://localhost:8080/pages
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJhdXRoMCIsInVzZXIiOjF9.dzQ2HcUZ21vyKfFRy_kjWVAPxNbbWld6iXRFqBPsT_w
+Content-Length: 132
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "title": "Présentation",
+  "uri": "/presentation",
+  "content": "Bonjour à tous",
+  "author": "julien",
+  "status": "hidden"
+}
+
+<> 2024-02-05T154202.200.json
+
+###
+
+GET http://localhost:8080/pages
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-02-05T154152.200.json
+
+###
+
+POST http://localhost:8080/pages
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJhdXRoMCIsInVzZXIiOjF9.dzQ2HcUZ21vyKfFRy_kjWVAPxNbbWld6iXRFqBPsT_w
+Content-Length: 133
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "title": "Présentation",
+  "uri": "/presentation",
+  "content": "Bonjour à tous",
+  "author": "test",
+  "status": "published"
+}
+
+<> 2024-02-05T152122.400.txt
+
+###
+
+POST http://localhost:8080/pages
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJhdXRoMCIsInVzZXIiOjF9.dzQ2HcUZ21vyKfFRy_kjWVAPxNbbWld6iXRFqBPsT_w
+Content-Length: 135
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "title": "Présentation",
+  "uri": "/presentation",
+  "content": "Bonjour à tous",
+  "author": "julien",
+  "status": "published"
+}
+
+<> 2024-02-05T151757.200.json
+
+###
+
+POST http://localhost:8080/pages
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJhdXRoMCIsInVzZXIiOjF9.dzQ2HcUZ21vyKfFRy_kjWVAPxNbbWld6iXRFqBPsT_w
+Content-Length: 133
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "title": "Présentation",
+  "uri": "/presentation",
+  "content": "Bonjour à tous",
+  "author": "test",
+  "status": "published"
+}
+
+###
+
+POST http://localhost:8080/pages
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJhdXRoMCIsInVzZXIiOjF9.dzQ2HcUZ21vyKfFRy_kjWVAPxNbbWld6iXRFqBPsT_w
+Content-Length: 135
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "title": "Présentation",
+  "uri": "/presentation",
+  "content": "Bonjour à tous",
+  "author": "julien",
+  "status": "published"
+}
+
+<> 2024-02-05T151642.200.json
+
+###
+
+POST http://localhost:8080/pages
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJhdXRoMCIsInVzZXIiOjF9.dzQ2HcUZ21vyKfFRy_kjWVAPxNbbWld6iXRFqBPsT_w
+Content-Length: 133
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "title": "Présentation",
+  "uri": "/presentation",
+  "content": "Bonjour à tous",
+  "author": "test",
+  "status": "published"
+}
+
+###
+
+POST http://localhost:8080/pages
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJhdXRoMCIsInVzZXIiOjF9.dzQ2HcUZ21vyKfFRy_kjWVAPxNbbWld6iXRFqBPsT_w
+Content-Length: 133
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "title": "Présentation",
+  "uri": "/presentation",
+  "content": "Bonjour à tous",
+  "author": "test",
+  "status": "published"
+}
+
+###
+
+POST http://localhost:8080/pages
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJhdXRoMCIsInVzZXIiOjF9.dzQ2HcUZ21vyKfFRy_kjWVAPxNbbWld6iXRFqBPsT_w
+Content-Length: 135
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "title": "Présentation",
+  "uri": "/presentation",
+  "content": "Bonjour à tous",
+  "author": "julien",
+  "status": "published"
+}
+
+<> 2024-02-05T151609.200.json
+
+###
+
+GET http://localhost:8080/pages
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJhdXRoMCIsInVzZXIiOjF9.dzQ2HcUZ21vyKfFRy_kjWVAPxNbbWld6iXRFqBPsT_w
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-02-05T151605.200.json
+
+###
+
+PUT http://localhost:8080/pages/1
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJhdXRoMCIsInVzZXIiOjF9.dzQ2HcUZ21vyKfFRy_kjWVAPxNbbWld6iXRFqBPsT_w
+Content-Length: 148
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "title": "Présentation",
+  "uri": "/presentation",
+  "content": "Bonjour à tous et à toutes",
+  "author": "julien",
+  "status": "published"
+}
+
+<> 2024-02-05T151600.200.json
+
+###
+
+PUT http://localhost:8080/pages/1
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJhdXRoMCIsInVzZXIiOjF9.dzQ2HcUZ21vyKfFRy_kjWVAPxNbbWld6iXRFqBPsT_w
+Content-Length: 148
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "title": "Présentation",
+  "uri": "/presentation",
+  "content": "Bonjour à tous et à toutes",
+  "author": "julien",
+  "status": "published"
+}
+
+<> 2024-02-05T151535.404.txt
+
+###
+
+PUT http://localhost:8080/pages/1
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJhdXRoMCIsInVzZXIiOjF9.dzQ2HcUZ21vyKfFRy_kjWVAPxNbbWld6iXRFqBPsT_w
+Content-Length: 148
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "title": "Présentation",
+  "uri": "/presentation",
+  "content": "Bonjour à tous et à toutes",
+  "author": "julien",
+  "status": "published"
+}
+
+<> 2024-02-05T151506.404.txt
+
+###
+
+PUT http://localhost:8080/pages/1
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJhdXRoMCIsInVzZXIiOjF9.dzQ2HcUZ21vyKfFRy_kjWVAPxNbbWld6iXRFqBPsT_w
+Content-Length: 148
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "title": "Présentation",
+  "uri": "/presentation",
+  "content": "Bonjour à tous et à toutes",
+  "author": "julien",
+  "status": "published"
+}
+
+<> 2024-02-05T151250.404.txt
+
+###
+
+PUT http://localhost:8080/pages/1
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJhdXRoMCIsInVzZXIiOjF9.dzQ2HcUZ21vyKfFRy_kjWVAPxNbbWld6iXRFqBPsT_w
+Content-Length: 148
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "title": "Présentation",
+  "uri": "/presentation",
+  "content": "Bonjour à tous et à toutes",
+  "author": "julien",
+  "status": "published"
+}
+
+<> 2024-02-05T151232.404.txt
+
+###
+
+PUT http://localhost:8080/pages/1
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJhdXRoMCIsInVzZXIiOjF9.dzQ2HcUZ21vyKfFRy_kjWVAPxNbbWld6iXRFqBPsT_w
+Content-Length: 148
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "title": "Présentation",
+  "uri": "/presentation",
+  "content": "Bonjour à tous et à toutes",
+  "author": "julien",
+  "status": "published"
+}
+
+<> 2024-02-05T151145.404.txt
+
+###
+
+PUT http://localhost:8080/pages/1
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJhdXRoMCIsInVzZXIiOjF9.dzQ2HcUZ21vyKfFRy_kjWVAPxNbbWld6iXRFqBPsT_w
+Content-Length: 148
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.9)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "title": "Présentation",
+  "uri": "/presentation",
+  "content": "Bonjour à tous et à toutes",
+  "author": "julien",
+  "status": "published"
+}
+
+<> 2024-02-05T151111.404.txt
+
+###
+

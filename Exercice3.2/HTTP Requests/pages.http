@@ -1,0 +1,100 @@
+@baseUrl = http://localhost:8080/pages
+
+### Register one default user
+POST http://localhost:8080/auths/register
+Content-Type: application/json
+
+{
+  "login":"julien",
+  "password":"password"
+}
+
+> {%
+    client.global.set("jamesToken", response.body.token);
+%}
+
+### Login the default user
+POST http://localhost:8080/auths/login
+Content-Type: application/json
+
+{
+  "login":"julien",
+  "password":"password"
+}
+
+> {%
+    client.global.set("jamesToken", response.body.token);
+%}
+
+### Register one user
+POST http://localhost:8080/auths/register
+Content-Type: application/json
+
+{
+  "login":"test",
+  "password":"password"
+}
+
+> {%
+    client.global.set("jamesToken", response.body.token);
+%}
+
+### Login one user
+POST http://localhost:8080/auths/login
+Content-Type: application/json
+
+{
+  "login":"test",
+  "password":"password"
+}
+
+> {%
+    client.global.set("jamesToken", response.body.token);
+%}
+
+### Read All pages not logged
+GET {{baseUrl}}
+
+### Read All pages logged
+GET {{baseUrl}}
+Authorization: {{jamesToken}}
+
+### Read page identified by 1
+GET {{baseUrl}}/1
+Authorization: {{jamesToken}}
+
+###Read page identified by 0
+GET {{baseUrl}}/0
+Authorization: {{jamesToken}}
+
+### Create One page
+POST {{baseUrl}}
+Content-Type: application/json
+Authorization: {{jamesToken}}
+
+{
+  "title": "Présentation",
+  "uri": "/presentation",
+  "content": "Bonjour à tous",
+  "author": "julien",
+  "status": "hidden"
+}
+### Update One page
+PUT {{baseUrl}}/1
+Content-Type: application/json
+Authorization: {{jamesToken}}
+
+{
+  "title": "Présentation",
+  "uri": "/presentation",
+  "content": "Bonjour à tous et à toutes",
+  "author": "julien",
+  "status": "published"
+}
+
+### Delete one page
+DELETE {{baseUrl}}/1
+Authorization: {{jamesToken}}
+
+### Delete one page with wrong id
+DELETE {{baseUrl}}/0

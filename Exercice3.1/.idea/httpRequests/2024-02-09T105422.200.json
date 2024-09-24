@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "title": "Pr&eacute;sentation",
+    "uri": "/presentation",
+    "content": "Bonjour &agrave; tous et &agrave; toutes",
+    "author": "julien",
+    "status": "published"
+  },
+  {
+    "id": 2,
+    "title": "Pr&eacute;sentation",
+    "uri": "/presentation",
+    "content": "Bonjour &agrave; tous",
+    "author": "julien",
+    "status": "published"
+  },
+  {
+    "id": 3,
+    "title": "Pr&eacute;sentation",
+    "uri": "/presentation",
+    "content": "Bonjour &agrave; tous",
+    "author": "julien",
+    "status": "published"
+  },
+  {
+    "id": 4,
+    "title": "Pr&eacute;sentation",
+    "uri": "/presentation",
+    "content": "Bonjour &agrave; tous",
+    "author": "julien",
+    "status": "published"
+  },
+  {
+    "id": 5,
+    "title": "Pr&eacute;sentation",
+    "uri": "/presentation",
+    "content": "Bonjour &agrave; tous",
+    "author": "julien",
+    "status": "hidden"
+  }
+]

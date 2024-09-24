@@ -1,0 +1,102 @@
+@baseUrl = http://localhost:8080/news
+
+### Register one default user
+POST http://localhost:8080/auths/register
+Content-Type: application/json
+
+{
+  "login":"julien",
+  "password":"password"
+}
+
+> {%
+    client.global.set("jamesToken", response.body.token);
+%}
+
+### Login the default user
+POST http://localhost:8080/auths/login
+Content-Type: application/json
+
+{
+  "login":"julien",
+  "password":"password"
+}
+
+> {%
+    client.global.set("jamesToken", response.body.token);
+%}
+
+### Read All news not logged
+GET {{baseUrl}}
+
+### Read All news logged
+GET {{baseUrl}}
+Authorization: {{jamesToken}}
+
+### Read news identified by 1
+GET {{baseUrl}}/1
+Authorization: {{jamesToken}}
+
+###Read news identified by 0
+GET {{baseUrl}}/0
+Authorization: {{jamesToken}}
+
+### Read All news for page 1 not authorized
+GET {{baseUrl}}/page/1
+
+### Read All news for page 1 authorized
+GET {{baseUrl}}/page/1
+Authorization: {{jamesToken}}
+
+### Create One news hidden
+POST {{baseUrl}}
+Content-Type: application/json
+Authorization: {{jamesToken}}
+
+{
+  "title": "Présentation",
+  "description": "Présentation de julien",
+  "author": "julien",
+  "content": "Bonjour à tous voici ma hidden news",
+  "status": "hidden"
+}
+### Create One news published
+POST {{baseUrl}}
+Content-Type: application/json
+Authorization: {{jamesToken}}
+
+{
+  "title": "Présentation",
+  "description": "Présentation de julien",
+  "author": "julien",
+  "content": "Bonjour à tous voici ma published news",
+  "status": "published"
+}
+### Update One news
+PUT {{baseUrl}}/1
+Content-Type: application/json
+Authorization: {{jamesToken}}
+
+{
+  "title": "Présentation",
+  "description": "Présentation de julien",
+  "author": "Julien",
+  "content": "Bonjour à tous voici ma published news",
+  "status": "published"
+}
+
+### Delete one news
+DELETE {{baseUrl}}/1
+Authorization: {{jamesToken}}
+
+### Delete one news with wrong id
+DELETE {{baseUrl}}/0
+
+### Associate one news
+POST {{baseUrl}}/2/associate
+Content-Type: application/json
+Authorization: {{jamesToken}}
+
+{
+  "pageId": 1
+}
